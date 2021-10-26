@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar4</title>
+<style>
+    *
+    {
+        margin: 0;
+    }
+    body
+    {
+        background-color: bisque;
+    }
+    .flex
+    {
+        display: flex;
+    }
+    div img
+    {
+        width: 40%;
+        height: 190px;
+    }
+    .box-img
+    {
+        object-fit: cover;
+        object-position: top;
+        margin: 15px;
+        border: 2px solid black;
+        background-color: greenyellow;
+    }
+    .box-img div h4
+    {
+
+        text-align: left;
+        margin: 0;
+    }
+    div h4
+    {
+       padding-top: 15px;
+       
+    }
+    .box-img > div
+    {
+        padding-left: 5px;
+    }
+    nav
+{   
+	display: flex;
+	background-color: springgreen;
+	padding-left: 15px;
+	align-items: center;
+	height: 60px;
+}
+nav ul 
+{  
+	display: flex;
+	text-decoration: none;
+	margin-left: auto;
+	list-style-type: none;
+
+}
+nav li
+{
+    padding-right: 20px;
+	
+}
+nav a
+{
+	color: whitesmoke;
+	font-weight: bold;
+	font-size: 18px;
+	justify-content: right;
+	text-decoration: none;
+}
+nav img
+{
+	height: 40px;
+	width: 60px;
+}
+p
+{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+    
+</style>
+</head>
+<body>
+    <nav>
+        <img src="assets/Img/hijrah.png">
+        <ul>    
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>   
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <P>TOLERANSI ANTAR ORGANISASI ISLAM DI INDONESIA</P>
+    <div class="flex">
+        <div class="box-img flex">
+            <img src="assets/Img/NU.jpg">
+            <div>
+               <h4>NU</h4>
+               <div>Organisasi Islam Terbesar Ke 1 Indonesia.</div>
+            </div>
+        </div>
+        <div class="box-img flex">
+            <img src="assets/Img/NUMD.jpg">
+            <div>
+                <h4>TOLERANSI GOLONGAN</h4>
+                <div>Gerakan NU Muhammadiyah Bersatu.</div>
+            </div>
+        </div>
+        <div class="box-img flex">
+            <img src="assets/Img/MD.jpg">
+            <div>
+                <h4>MUHAMMADIYAH</h4>  
+                <div>Organisasi Islam Terbesar Ke 2 Indonesia.</div>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>
