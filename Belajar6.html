@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar5</title>
+<style>
+        *
+        {
+            margin:0;
+        }
+        .flex
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav
+        {   
+            display: flex;
+            justify-content: space-between;
+            background-color: brown;
+            padding-left: 15px;
+            align-items: center;
+            height: 60px;
+        }
+        nav ul 
+        {  
+            display: flex;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        nav li
+        {
+            padding-right: 10px;   
+
+        }
+        nav a
+        {
+            color: whitesmoke;
+            font-weight: bold;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        nav img
+        {
+            height: 40px;
+            width: 60px;
+        }    
+        .carding
+        {
+            position: relative;
+            width: 90%;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 3px;
+            margin: 25px;
+        }
+        .carding > img
+        {   
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .label
+        {
+            position: absolute;
+            background: blanchedalmond;
+            color: red;
+            padding: 8px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 5px;
+            right: 0;
+            top: 0;
+            border: 1px solid black;
+        }
+        .cover
+        {
+            background: rgba(0, 0 ,0 , 0.200);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+        .details
+        {
+            position: absolute;
+            background-color: brown;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: white;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            text-align: center;
+            font-size: 12px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .carding:hover > .cover
+        {
+            background-color: rgba(0, 0, 0, 0.500);
+        }
+
+    @media screen and (min-width: 767px)
+    {
+      .carding
+      {
+          width: 40%;
+      }
+      nav a
+      {
+          font-size: 18px;
+      }
+    }
+
+    @media screen and (min-width: 1023px)
+    {
+     .carding
+     {
+        width: 40%;
+        height: 20%;
+     }
+    }
+
+</style>
+</head>
+<body>
+
+    <nav class="menu-dekstop">
+        <img src="assets/Img/hijrah.png">
+        <ul>    
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>   
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+<div class="flex">
+        <div class="carding">
+        <img src="assets/Img/Quran.jpg">
+            <div class="cover">
+                <div class="label">
+                $ Free
+                </div>
+                <div class="details">
+                Al Quran Solution
+                </div>
+            </div>
+        </div>
+
+        <div class="carding">
+            <img src="assets/Img/Quran.jpg">
+            <div class="cover">
+                <div class="label">
+                $ Free
+                </div>
+                <div class="details">
+                Al Quran Solution
+                </div>
+            </div>
+        </div>
+        <div class="carding">
+            <img src="assets/Img/Quran.jpg">
+            <div class="cover">
+                <div class="label">
+                $ Free
+                </div>
+                <div class="details">
+                Al Quran Solution
+                </div>
+            </div>
+        </div>
+        <div class="carding">
+            <img src="assets/Img/Quran.jpg">
+            <div class="cover">
+                <div class="label">
+                $ Free
+                </div>
+                <div class="details">
+                Al Quran Solution
+                </div>
+            </div>
+        </div>
+</body>
+</html>
